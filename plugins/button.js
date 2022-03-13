@@ -26,7 +26,7 @@ midu.addCommand(
       footerText: items[1],
       buttons: buttons,
     }
-    return await message.client.sendMessage(message.jid,buttonMessage, message),
+    return await message.client.sendMessage(message.jid,buttonMessage, message,
       {},MessageType.buttonsMessage
     )
   }
