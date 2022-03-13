@@ -2,7 +2,7 @@
   "name": "VavaBot",
   "version": "7.3.6",
   "description": "VavaBot is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
-  "main": "./Julie-Mwol/bot.js",
+  "main": "./VavaBot/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
