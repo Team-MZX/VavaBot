@@ -36,10 +36,31 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (a
             }
         );
         
-        await message.client.sendMessage(
-            message.jid,
-            degisiklikler + '```', MessageType.text
-        ); 
+        const buttons = [
+
+  {buttonId: 'id1', buttonText: {displayText: '.update now'}, type: 1}
+
+]
+
+const buttonMessage = {
+
+      contentText: degisiklikler + '```',
+
+      footerText: "update",
+
+      buttons: buttons,
+
+    }
+
+    return await message.sendMessage(
+
+      toButtonMsg(buttonMessage, message),
+
+      {},
+
+      MessageType.buttonsMessage
+
+    );
     }
 }));
 
